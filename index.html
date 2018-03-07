@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>NYT Search</title>
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/styles.css" />
 </head>
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 <script src="./assets/javascript/app.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 <body>
-    <div class= "main-container">
-        <header class= "titlebox">
-            <img src="" alt="">
-            New York Times Search
+    <div class="main-container">
+        <header class="titlebox">
+            <img src="" alt=""> New York Times Search
         </header>
-        <section class= "searchbox">
+        <section class="searchbox">
             <h3>Search Parameters</h3>
             <form>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <label for="search">Search Term</label>
+                    <input type="text" class="form-control" id="search" aria-describedby="emailHelp" placeholder="Search Value">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="records">Number of Records To Retrieve</label>
+                    <select class="form-control" id="records">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
                 </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <div class="form-group">
+                    <label for="startYear">Start Year</label>
+                    <input type="text" class="form-control" id="startYear" aria-describedby="emailHelp">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </section>
-        <section class= "resultsbox">
-            <h3>Top Articles</h3>
-            <div></div>
-        </section>
+                <div class="form-group">
+                    <label for="endYear">End Year</label>
+                    <input type="text" class="form-control" id="endYear" aria-describedby="emailHelp">
+                </div>
+
+    </div>
+
+    <button type="search" class="btn btn-primary">Search</button>
+    <button type="clear" class="btn btn-primary">Clear Results</button>
+
+    </form>
+    </section>
+    <section class="resultsbox">
+        <h3>Top Articles</h3>
+        <div></div>
+    </section>
     </div>
 
 </body>
+
 </html>
