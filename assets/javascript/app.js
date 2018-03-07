@@ -37,3 +37,4 @@ function searchArticle(search, records, startYear, endYear) {
         throw err;
     });
 }
+
