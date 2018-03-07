@@ -29,7 +29,6 @@ function searchArticle(search, records, startYear, endYear) {
     }).done(function (result) {
         
         // Document Stuff Here
-
         console.log(result);
 
 
